@@ -14,4 +14,4 @@ to be included in the Alpine Linux distribution.
    :caption: Contents:
 
    ch-scope
-
+   ch-repositories
