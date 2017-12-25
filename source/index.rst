@@ -15,3 +15,4 @@ to be included in the Alpine Linux distribution.
 
    ch-scope
    ch-repositories
+   ch-binary

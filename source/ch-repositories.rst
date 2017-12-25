@@ -119,3 +119,69 @@ reponsibility, and broken packages are usually disabled.
 
 The ``testing`` repository is not included in any released distribution, and is only available in Alpine
 ``edge`` which is an unreleased distribution.
+
+
+.. s-aports:
+
+The ``aports`` GIT repository
+-----------------------------
+
+The ``aports`` GIT repository is where the build recipes for binary packages included in Alpine
+distributions are stored.  There is a branch for each released Alpine distribution, with the
+``master`` branch serving as the branch used for ``edge``.
+
+As part of the release process, the ``master`` branch is split off into a release branch whenever
+a new distribution is created.
+
+For more information, see the release process chapter.
+
+
+.. s-aports-sections:
+
+Sections in the ``aports`` GIT repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``aports`` GIT repository has five sections, some of which correspond to binary package
+repositories included in each release.  These are:
+
+``main``
+  Package recipes stored in this section correspond to the ``main`` binary repository
+  in the release that the GIT branch is related to.
+
+``community``
+  Package recipes stored in this section correspond to the ``community`` binary repository
+  in the release that the GIT branch is related to.
+
+``testing``
+  Package recipes stored in this section correspond to the ``testing`` binary repository
+  in the ``edge`` distribution.  It is not built in any released versions of the distribution,
+  and is typically deleted from the branch when the branch is made.
+
+``unmaintained``
+  Package recipes stored in this section are not built, but are kept around for convenience
+  if a new maintainer wishes to take them over.
+
+``non-free``
+  Package recipes stored in this section are not built, violate Alpine's licensing guidelines,
+  and must be built locally.
+
+
+.. s-aports-contributing:
+
+Contributing to the ``aports`` GIT repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To get a package into Alpine, its ``APKBUILD`` and related files must be contributed to the
+``aports`` GIT repository.
+
+Developers have rights to push their packages to the ``aports`` repository, while contributors
+don't and must have a developer sponsor their packages by committing changes on their behalf.
+
+Trusted contributors can obtain limited rights that allow pushing changes to the ``community``
+and ``testing`` sections.  These limited rights are usually granted as part of the developer
+onboarding process.
+
+Documentation and resources for and about the onboarding process are available in an
+appendix.
+
+
