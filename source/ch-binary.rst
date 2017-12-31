@@ -319,10 +319,20 @@ A suffix can be provided to denote pre-release or patch status:
 ``_pre``   Pre release
 ``_rc``    Release candidate
 (none)     Normal release
+``_cvs``   CVS snapshot
+``_svn``   SVN snapshot
+``_git``   Git snapshot
+``_hg``    Mercurial snapshot
 ``_p``     Patch release
 ========== ========================
 
 Any of these suffixes may be followed by a number.
+
+``_git``, ``_hg`` and similar are used when packaging a snapshot of a source repository.
+The snapshot should be treated as a patch to the previous version and should be followed by a date
+of the referenced commit (e.g. ``_git20170913``) or an ordinal number.  If the upstream has not
+released any version yet, use ``0`` as the version and snapshot suffix with a date (e.g.
+``0_git20170913``).
 
 The last component of the version is the Alpine package revision, in the form ``-r0``.  The first
 package version for a given upstream release must always end in ``-r0``.
