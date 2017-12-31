@@ -296,7 +296,8 @@ Binary packages can contain several maintainer scripts, these are:
 Binary package naming rules
 +++++++++++++++++++++++++++
 
-Binary package names must only contain alphanumeric characters, dashes or periods.
+Binary package names must only contain ASCII alphanumeric characters, dashes or periods and should
+be in lower case.
 
 
 .. s-binary-package-version-rules:
