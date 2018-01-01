@@ -305,7 +305,10 @@ be in lower case.
 Binary package versioning rules
 +++++++++++++++++++++++++++++++
 
-Binary package versions consist of one or more numbers separated by a period.  The final
+Binary package versions format is based on
+`Gentoo naming rules <https://devmanual.gentoo.org/ebuild-writing/file-format/#file-naming-rules>`_.
+
+The versions consist of one or more numbers separated by a period.  The final
 number may have a single letter following it (``1.1g``), but should not be used to indicate
 pre-release status -- the ``apk`` package manager considers ``1.1b`` to be newer than
 ``1.1``.
