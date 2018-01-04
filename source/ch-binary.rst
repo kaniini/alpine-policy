@@ -156,6 +156,9 @@ are separated by newlines.  A typical stanza looks like:
 ``p``
   A list of dependencies that this package may provide.
 
+``k``
+  The provider priority.
+
 ``i``
   Any install-if rules that would trigger automatic installation of this package.
 
