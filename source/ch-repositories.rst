@@ -65,8 +65,8 @@ The guidelines are:
      No provision of the license may be predicated on any individual technology or style of interface.
 
 11. Example Licenses
-     The "GPL," "BSD," "MIT," and "ISC" licenses are examples of licenses that would be considered
-     acceptable.
+     The "GPL-2.0-only," "BSD-3-Clause," "MIT," and "ISC" licenses are examples of licenses that
+     would be considered acceptable.
 
 
 .. s-repos:
